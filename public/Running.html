@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Snack Drone</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="ScriptAll.js"></script>
+    <script>
+        var modal = document.querySelector("#mask");
+        var close = dovument.querySelector(".close");
+        function open_close() {
+            modal.classlist.toggle("show-modal");
+        }
+        close.addEventListener("click", open_close);
+    </script>
+    <style>
+    .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #230cf2;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin-bottom:25px;
+    }
+
+    .button:hover {background-color: #1b4a96}
+
+    .button:active {
+        background-color: #1b4a96;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    ul.no-bullets {
+        list-style-type: none;
+        padding: 0;
+    }
+    </style>
+</head>
+<body>
+    
+        <div id="top">
+            <h1>SnackDrone Feeding of the Future</h1>
+        </div>
+        <div id="nav">
+            <ul id="navlist" class="no-bullets">
+                <li><form method="post" action="/feed"><button class="button">Feed Me</button></form></li>
+                <li><form method="post" action="/land"><button class="button">Shut Down</button></form></li>
+                <li><form method="post" action="/face"><button class="button">Toggle Face Tracking</button></form></li>
+            </ul>
+        </div>
+
+</body>
+</html>
