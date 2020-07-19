@@ -1,2 +1,2 @@
 # SnackDrone
-Joke project made for a hackathon.
+Joke project made for a hackathon. It delivers snacks using various activation methods. It can be launched, called, and landed from a web app. These three actions can be performed with a controller via an IR sensor. The drone can also be called by screaming loud enough. A facial tracking option can be opened to perform landing, launching, and requesting commands. This requires the user to move their head into the zones marked within the image on their screen.
