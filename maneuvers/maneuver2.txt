@@ -1,0 +1,4 @@
+command
+down 50
+delay 4
+up 50
